@@ -1,0 +1,10 @@
+{
+  "Name": "StardewAstronomy>",
+  "Author": "StevenRummler",
+  "Version": "1.0.0",
+  "Description": "Astronomy in Stardew Valley",
+  "UniqueID": "StevenRummler.StardewAstronomy",
+  "EntryDll": "StardewAstronomy.dll",
+  "MinimumApiVersion": "3.0.0",
+  "UpdateKeys": []
+}
