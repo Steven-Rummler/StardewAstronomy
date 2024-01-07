@@ -1,9 +1,11 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
+using StardewAstronomy.Menus;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewModdingAPI.Utilities;
 using StardewValley;
+using StardewValley.Menus;
 
 namespace StardewAstronomy
 {
@@ -35,6 +37,9 @@ namespace StardewAstronomy
 
             // print button presses to the console window
             this.Monitor.Log($"{Game1.player.Name} pressed {e.Button}.", LogLevel.Debug);
+
+            // if the button is the letter Y, also open the telescope menu
+            if (e.Button.ToString() == "Y") Game1.activeClickableMenu = new Telescope();
         }
     }
 }
